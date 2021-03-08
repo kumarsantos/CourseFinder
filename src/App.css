@@ -1,26 +1,105 @@
-
-
-*{
+header{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-      background-color: #151B54;
-
-}
-
-.App >h1{
-  display: flex;
-  padding: 5px;
-  text-align: center;
-  justify-content: center;
-  font-weight: 700;
+  background-color: #131e81;
+  height: 65px;
   color:white;
-
-}
-
-
-.button{
   display: flex;
-  position: absolute;
-  justify-content: space-between;
+  align-items: center;
+  
 }
+header h2{
+  margin-left:50px;
+  font-weight: 500;
+
+}
+.courseselector_container{
+  height: 90px;
+  background-color: rgb(223, 219, 219);
+}
+.selectorwapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:50%;
+  height: 90px;
+  /* background-color: rgb(218, 40, 40); */
+  margin-left: 60px;
+}
+.course select,.country select{
+  width:250px;
+  height: 35px;
+  outline: none;
+  border:none;
+  display: inline-block;
+  padding:5px;
+  box-shadow: 0px 1px 2px 1px rgb(148, 148, 148);
+  font-size: 15px;
+  font-weight: 600;
+ 
+  
+}
+.course select option,.country select option{
+  
+  
+  font-size: 15px;
+  color:rgb(75, 72, 65);
+ 
+}
+
+.finder button{
+  padding:9px 16px 9px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border:none;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgb(255, 166, 1);
+  color:white;
+  cursor: pointer;
+}
+.finder button:hover{
+  /* background-color: rgb(250, 114, 3); */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0.2px 0.2px 5px 1px black;
+  filter: opacity(0.9);
+}
+
+.spiner{
+  height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.Welcome{
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(170, 169, 169);
+}
+.Welcome h1{
+  padding:150px;
+  background-color: #f4f4f4;
+}
+
+.notfound{
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(170, 169, 169);
+}
+.notfound h1{
+  padding:150px;
+  background-color: #f4f4f4;
+}
+

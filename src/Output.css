@@ -1,0 +1,349 @@
+.output_container{
+    width:100%;
+    padding:60px;
+    /* background-color:rgb(199, 140, 140); */
+}
+.output_container >p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:5px;
+}
+
+/* .output_wapper{
+    width:100%;
+    padding:10px;
+    background-color:rgb(222, 226, 226);
+} */
+.output_header{
+    border:1px solid rgb(151, 151, 151);
+    background-color:rgb(226, 224, 224);
+    width:100%;
+    /* background-color: peru; */
+    display: flex;
+}
+.university_image{
+    width:175px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+.university_image img{
+    width:98%;
+    height: 98%;
+
+}
+.content_wrapper{
+    /* background-color: powderblue; */
+    width:100%;
+    height: 160px;
+}
+.university_banner{
+    width:100%;
+    height: 80px;
+    padding:20px 20px;
+    /* background-color: rgb(243, 220, 220); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.university_name{
+    padding:5px;
+}
+.university_name h4{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(20, 111, 172);
+}
+.university_name p{
+    line-height: 10px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.website_link a{
+    border:1px solid rgb(145, 143, 143);
+    color:black;
+    background-color: rgb(255, 255, 255);
+    padding:10px 15px ;
+    text-decoration: none;
+}
+.logo_content{
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.institute{
+    width:100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(247, 157, 220); */
+}
+.institute img{
+    width:50px;
+    height: 50%;
+}
+.institute p{
+    font-size: 12px;
+    width:10px;
+    margin-top:4px;
+    line-height: 14px;
+    font-weight: 600;
+    color:rgb(5, 5, 199);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.top{
+    width:100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(240, 204, 229); */
+
+}
+.top img{
+    width:50px;
+    height: 50%;
+}
+.top p{
+    font-size: 12px;
+    width:10px;
+    margin-top:4px;
+    line-height: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(5, 5, 199);
+}
+.courses{
+    width:80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+.courses img{
+    width:50px;
+    height: 50%;
+}
+.courses p{
+    font-size: 12px;
+    width:10px;
+    margin-top:4px;
+    font-weight: 600;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(5, 5, 199);
+}
+.phd{
+    width:80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: white; */
+}
+.phd img{
+    width:50px;
+    height: 50%;
+}
+.phd p{
+    font-size: 12px;
+    width:10px;
+    font-weight: 600;
+    margin-top:4px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(5, 5, 199);
+}
+
+.erxians_admit{
+    width:80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+}
+.erxians_admit p{
+    font-size: 12px;
+    width:10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    line-height: 14px;
+    color:rgb(5, 5, 199);
+}
+.erxians_admit p:first-child{
+    width:50px;
+    height: 40px; 
+    margin-bottom:5px;
+   padding:12px 20px;
+   color:rgb(255, 255, 255);
+   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+   background-color: rgb(54, 45, 45);
+}
+.erxians_applied{
+    width:80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.erxians_applied p{
+    font-size: 12px;
+    width:10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 14px;
+    font-weight: 500;
+    color:rgb(5, 5, 199);
+}
+.erxians_applied p:first-child{
+     width:50px;
+     height: 40px; 
+     margin-bottom:5px;
+    padding:12px 20px;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+   font-size: 16px;
+   font-weight: 800;
+    background-color: rgb(54, 45, 45);
+}
+.accordian{
+    width:40px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    border:1px solid rgb(150, 147, 147);
+}
+.collapsed_part{
+    /* margin-top:15px; */
+    /* width:80%; */
+    /* background-color: rgb(255, 7, 152); */
+}
+.collapsed_part>p{
+    line-height: 18px;
+}
+.collapsed_part>p>span:first-child{
+    background-color:rgb(51, 49, 48);
+    height: 40px;
+    color: whitesmoke;
+    padding:5px 10px 5px 10px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.collapsed_part>p>span:nth-child(2){
+    background-color:rgb(101, 252, 206);
+    height: 40px;
+    padding:5px 10px 5px 10px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.collapsed_part>p>span:nth-child(3){
+    background-color:rgb(51, 51, 50);
+    height: 40px;
+    color: whitesmoke;
+    padding:5px 10px 5px 10px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.course_container{
+    display:flex;
+    margin-top:2px;
+    padding:10px;
+    border:1px solid rgb(143, 141, 141);
+    background-color:rgb(222, 226, 226);
+}
+.collapsed_data{
+    width:100%;
+    background-color: white;
+    padding:20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    background-color: rgb(222, 226, 226);
+    
+    width:80%;
+}
+.content p{
+    font-size: 12px;
+    line-height: 14px;
+    width:100%;
+    text-align: justify;
+    
+}
+.help_and_collapse{
+    width: 25%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.help_and_collapse div:first-child{
+    padding:5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: rgb(76, 206, 65);
+}
+.help_and_collapse div a{
+    color: black;
+    text-decoration: none;
+
+}
+.help_and_collapse div:last-child{
+    height: 30px;
+    padding-top:15px;
+    border-radius: 4px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    border: 1px solid rgb(150, 147, 147);
+    align-items: center;
+    justify-content: center;
+}
+.last_content{
+    margin-top:0px;
+    padding:10px;
+    background-color: rgb(255, 255, 255);
+    width:100%;
+}
+.last_content p:last-child{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    margin-top: 0px;
+}
+.last_content p:first-child{
+    font-weight: 900;
+    font-size: 14px;
+   margin-bottom: 5px;
+}
+.fisrt_col,.second_col,.third_col p{
+    font-size: 12px;
+}
