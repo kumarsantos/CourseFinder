@@ -1,9 +1,7 @@
 import React from "react";
 import "./ContainerOne.css";
 
-
 const ContainerOne = () => {
-
   return (
     <div className="statement">
       <strong>Trending Erxians -</strong> see which Erxian is <br /> trending?
@@ -21,9 +19,8 @@ const ContainerOne = () => {
       <br /> <br />
       <div className="btn__div">
         <button>Sign Up</button>
-      <button>Login</button>
+        <button>Login</button>
       </div>
-
     </div>
   );
 };

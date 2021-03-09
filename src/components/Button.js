@@ -1,6 +1,7 @@
 import React from "react";
 import "./Button.css";
 import { TextField } from "@material-ui/core";
+import Posts from "./Posts";
 
 class Button extends React.Component {
   constructor(props) {
@@ -22,20 +23,28 @@ class Button extends React.Component {
   }
   render() {
     return (
-      <div>
-        <TextField
-          label="Your Message"
-          fullWidth
-          color="primary"
-          helperText={this.state.helperText}
-          onChange={this.onChange.bind(this)}
-          error={this.state.error}
-          required
-          id="outlined-required"
-        />
-        <br /> <br />
-        <button onChange={this.onChange.bind(this)}>Post</button>
-      </div>
+      <>
+        <div>
+          <TextField
+            label="Your Message"
+            fullWidth
+            placeholder="Write a Comment"
+            color="primary"
+            helperText={this.state.helperText}
+            onChange={this.onChange.bind(this)}
+            error={this.state.error}
+            required
+            id="outlined-required"
+          />
+          <br /> <br />
+          <button onChange={this.onChange.bind(this)}>Post</button>
+        </div>
+        <div className="posts_container">
+          <Posts />
+          <Posts />
+          {/* <Posts /> */}
+        </div>
+      </>
     );
   }
 }

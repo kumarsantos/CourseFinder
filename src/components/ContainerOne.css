@@ -18,10 +18,11 @@ hr {
   font-size: 20px;
 }
 .btn__div {
-  margin-left: -350px;
-
+  margin-left: -60px;
   width: 100%;
   display: flex;
+
+  color: #e8a317;
   justify-content: space-around;
   align-items: center;
 }

@@ -6,13 +6,14 @@ import { customTheme } from "./components/customTheme";
 
 function App() {
   return (
-    <div className="App">
-      <ThemeProvider theme={customTheme}>
-        <h1>Erxian Corner</h1>
+    <div className="app">
 
-        <Home />
-        
-      </ThemeProvider>
+        <ThemeProvider theme={customTheme}>
+          <h1>Erxian Corner</h1>
+
+          <Home />
+        </ThemeProvider>
+
     </div>
   );
 }
