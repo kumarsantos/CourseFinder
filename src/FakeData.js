@@ -1,6 +1,6 @@
 export const FakeData=[
     {
-        Country:"Australia",
+        Country:"UK",
         University:"Central Queensland University",
         Course:{
             Engineering:[ "Computer","Civil","Computer Application","Mechanical"],       

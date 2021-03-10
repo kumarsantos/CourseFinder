@@ -8,14 +8,16 @@
     margin-bottom:5px;
 }
 
-/* .output_wapper{
-    width:100%;
-    padding:10px;
-    background-color:rgb(222, 226, 226);
-} */
+.output_wapper{
+    
+    width:80%;
+    
+   /* padding:10px;
+    background-color:rgb(222, 226, 226); */
+}
 .output_header{
-    border:1px solid rgb(151, 151, 151);
-    background-color:rgb(226, 224, 224);
+    border:1px solid rgb(75, 71, 71);
+    background-color:rgb(221, 221, 224);
     width:100%;
     /* background-color: peru; */
     display: flex;
@@ -241,7 +243,7 @@
 }
 .collapsed_part{
     /* margin-top:15px; */
-    /* width:80%; */
+    width:80%;
     /* background-color: rgb(255, 7, 152); */
 }
 .collapsed_part>p{
@@ -288,7 +290,6 @@
 
 .content{
     background-color: rgb(222, 226, 226);
-    
     width:80%;
 }
 .content p{
@@ -346,4 +347,231 @@
 }
 .fisrt_col,.second_col,.third_col p{
     font-size: 12px;
+}
+
+
+@media(max-width:420px){
+
+    .output_container{
+    padding:5px;
+    /* border:1px solid red; */
+    
+   
+    }
+    .output_container p{
+        font-size: 11px;
+        line-height: 16px;
+        text-align: justify;
+        font-weight: normal;
+    }
+    .output_wrapper{
+    width:100%;
+    /* border: none; */
+}
+
+.output_header{
+    position: relative;
+    padding:0px;
+    border: none;
+    /* padding:10px; */
+    }
+
+.university_image{
+    width:40px;
+    height:40px;
+    /* float:right; */
+}
+.university_image img{
+    width:70px;
+    height:40px;
+    /* float: right; */
+    /* margin-left:-10px; */
+}
+
+    .university_banner{
+        width:100%;
+        justify-content: space-around;
+       
+       
+       
+        
+    }
+    .university_name{
+        /* padding:5px; */
+        width:90%;
+        margin-top:-25px;
+    }
+    .university_name h4{
+        width:170px;
+        font-size: 16px;
+        
+    }
+    .university_name p{
+        margin-top:-10px;
+        font-size: 9px;
+    }
+
+   
+   .website_link{
+       position:absolute;
+       /* visibility: hidden; */
+      
+       margin-left:200px;
+       margin-top:-75px;
+       
+    }
+    
+    .website_link a{
+        /* height:20px; */
+        position: absolute;
+        font-size: 10px;
+        font-weight: 500;
+        background-color: rgb(181, 245, 117);
+        padding:2px 5px 3px 5px;
+        height:20px;
+        border-radius: 12px;
+        /* align-items: center; */
+       
+
+   }
+   .website_link a span{
+       visibility:hidden;
+   }
+    
+   
+    
+
+
+
+
+
+
+
+
+
+
+    .logo_content{
+        /* display:none; */
+        
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 133px;
+        margin-top:-25px;
+
+    }
+
+
+    .institute,
+     .top,.courses,.phd{
+        width:50px;
+        height: 50%; 
+        /* margin-left:-60px; */
+        
+    }
+    
+    .institute img,
+    .top img,
+    .courses img,.phd img{
+        width:25px;
+        height: 100%;
+    }
+    .courses p,
+    .phd p,
+    .top p,
+    .institute p{
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 10px; 
+        text-align: center;
+        
+    }
+   
+
+    .erxians_applied,.erxians_admit{
+        width:70px;
+        height: 100%;
+        margin-top:-10px;
+        
+    }
+    
+    .erxians_applied p:first-child,
+    .erxians_admit p:first-child{
+        width:5px;
+        height: 35px; 
+        font-size: 12px;
+       
+    }
+    .erxians_applied p:last-child,
+    .erxians_admit p:last-child{
+        font-size: 9px; 
+        margin-top:-5px;
+        line-height: 10px;  
+           
+    }
+    #last{
+        margin-top:-8px;
+    }
+   
+    .accordian{
+        /* position: absolute; */
+        /* top:10px; */
+        /* left:400px; */
+        width:40px;
+        height: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+   .collapsed_part {
+      
+       width:100%;
+       margin-top:10px;
+   }
+   .collapsed_part p span{
+       margin-left: 5px;
+       z-index: 999;
+       width:140px;
+   }
+   .collapsed_part p:first-child{
+      
+       margin-top: 10px;
+   }
+   .course_container{
+       position: relative;
+       width:100%;
+       flex-direction: column;
+       padding:5px;
+   }
+   .content{
+       width:100%;
+       padding:0px;
+   }
+   .content p{
+       margin-top:-5px;
+       font-size: 10px;
+       
+   }
+   .help_and_collapse{
+   width:100%;
+   justify-content: flex-end;
+   margin-top:-5px;
+   }
+   .fisrt_col h6,.second_col h6,.third_col h6{
+       font-size: 12px;
+   }
+   .fisrt_col p,.second_col p,.third_col p{
+       font-size: 8px;
+   }
+
+
+
+
 }

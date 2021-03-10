@@ -58,7 +58,7 @@ function App() {
       <header><h2>Courser Finder</h2></header>
       <CourseSelector Find={Find}  SetData={SetData} userData={userData}/>
       {spinner ? (<Spinner />): (result.length!==0) ? (result.map((val,i)=><Output result={val}  key={i}/>)): (!Error) ? <Welcome />:<ResultNotFound />}
-      {/* <Output /> */}
+      {/* <Output result={"hidfgdgfdgdfgdgdfgdfgdfgdfgdfgdgdfg"} /> */}
     </div>
   );
 }
