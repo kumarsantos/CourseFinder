@@ -53,15 +53,41 @@ const Output = ({ result }) => {
   const [bachelor, SetBachelor] = useState(true);
   const [master, Setmaster] = useState(false);
 
+  const [bach, Setbachcolor] = useState({backgroundColor:' rgb(255, 166, 1)',color:'white'});
+  const [mas, Setmascolor] = useState({});
+  const [doc, Setdoccolor] = useState({});
+  
+
   const TabSwitching=(id)=>{
       if(id==="mas"){
          SetBachelor(false)
-         Setmaster(true)}
-    else if(id==="doc"){
-        SetBachelor(false)
-        Setmaster(false)}
-    else{SetBachelor(true)}
+         Setmaster(true)
+         Setmascolor({backgroundColor:' rgb(255, 166, 1)',color:'white'})
+         Setdoccolor({backgroundColor:'',color:''})
+         Setbachcolor({backgroundColor:'',color:''})
+         
+         
+        }
+        else if(id==="doc"){
+          SetBachelor(false)
+          Setmaster(false)
+          Setdoccolor({backgroundColor:' rgb(255, 166, 1)',color:'white'})
+          Setmascolor({backgroundColor:'',color:''})
+          Setbachcolor({backgroundColor:'',color:''})
+          
+        }
+        else{
+          SetBachelor(true)
+          Setbachcolor({backgroundColor:' rgb(255, 166, 1)',color:'white'})
+          Setmascolor({backgroundColor:'',color:''})
+          Setdoccolor({backgroundColor:'',color:''})
+      
+    }
 }
+
+const color=`${ bachelor ? bach.color : master ? mas.color: doc.color}`
+const backgroundColor=`${ bachelor ? bach.backgroundColor : master ? mas.backgroundColor: doc.backgroundColor}`
+console.log(color, backgroundColor)
   
   
   const [show, Setshow] = useState(true);
@@ -89,6 +115,7 @@ const Output = ({ result }) => {
     }
   };
 
+  
   
 
   const OutputContainer = {
@@ -188,9 +215,9 @@ const Output = ({ result }) => {
 
         <div className="collapsed_part" style={SubContainer}>
           <p>
-            <span id="bach" onClick={e=>TabSwitching(e.target.id)}>Bachelors</span>
-            <span id="mas" onClick={e=>TabSwitching(e.target.id)}>Master</span>
-            <span id="doc" onClick={e=>TabSwitching(e.target.id)}>Doctorate</span>
+            <span id="bach" style={{backgroundColor:`${bach ? bach.backgroundColor:null}`,color:`${bach ? bach.color:null}`}} onClick={e=>TabSwitching(e.target.id)}>Bachelors</span>
+            <span id="mas" style={{backgroundColor:`${mas ? mas.backgroundColor : null}`,color:`${mas ? mas.color:null}`}} onClick={e=>TabSwitching(e.target.id)}>Master</span>
+            <span id="doc" style={{backgroundColor:`${doc ? doc.backgroundColor :null }`,color:`${doc ? doc.color:null}`}} onClick={e=>TabSwitching(e.target.id)}>Doctorate</span>
           </p>
 
          { bachelor ? (<SubContent Subtoggle={Subtoggle} subshow={subshow} course_name=" Bachelor In Computer"/>)
