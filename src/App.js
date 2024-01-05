@@ -12,49 +12,34 @@ function App() {
   const [userData,SetData]=useState({
     course:'',
     Country:''
-  })
-  
+  }) 
 
   const [spinner,setspinner]=useState(false)
-
   const [result,Setresult]=useState([])
-
   const [Error,SetError]=useState(false)
 
  
   
-  let spiner=()=>{
-
+  const spiner=()=>{
     setspinner(true)
-
     setTimeout(clear,2000)
-
   }
-  const  clear=() =>{ 
-  
+
+  const  clear=() =>{   
     setspinner(false)
   }
 
   const Find=()=>{
-
-
-    spiner()
-    
-
+    spiner()  
     const res=FakeData.filter(ob=>ob.Country==userData.Country|| userData.course===Object.entries(ob.Course).map(val=>val)).map(data=>data)
-    
     if(res.length===0){
       SetError(true)
     }
-    Setresult(res)
-    
-
+    Setresult(res)  
   }
 
   return (
     <div className="App">
-
-
       <header><h2>Courser Finder</h2></header>
       <CourseSelector Find={Find}  SetData={SetData} userData={userData}/>
       {spinner ? (<Spinner />):(result.length!==0) ? (result.map((val,i) => <Output result={val}  key={i}/>)): (!Error) ? <Welcome />:<ResultNotFound />}
